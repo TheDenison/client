@@ -1,0 +1,113 @@
+/* Sidebar.css */
+.sidebar-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.sidebar {
+  background-color: #222;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: width 0.3s ease;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar.closed {
+  width: 60px;
+}
+
+.sidebar.open {
+  width: 250px;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 50%;
+  right: -20px;
+  background-color: #ff003f;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease;
+}
+
+.toggle-button:hover {
+  background-color: #c00030;
+}
+
+.menu-items {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  width: 100%;
+  margin-left: 30px;
+  padding: 10px 15px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.menu-item.active {
+  background-color: #34282b; /* Цвет фона для активного элемента */
+  color: #fff; /* Цвет текста активного элемента */
+  border-left: 4px solid #ff003f; /* линия слева */
+}
+
+/* Опускаем вниз последний(-е) элемент списка */
+.fixed-bottom {
+  margin-top: auto;
+}
+
+.menu-item:hover {
+  background-color: #333;
+  color: #4a90e2;
+}
+
+.menu-label {
+  white-space: nowrap;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.sidebar.closed .menu-label {
+  opacity: 0;
+  width: 0;
+}
+
+.sidebar.open .menu-label {
+  opacity: 1;
+  width: auto;
+}
+
+.menu-items li svg {
+  font-size: 24px;
+}

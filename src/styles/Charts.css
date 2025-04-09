@@ -1,0 +1,31 @@
+.charts-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+
+.chart-container {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  box-sizing: border-box;
+  height: 700px;
+}
+
+.chart-container h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.chart-iframe {
+  width: 95%;
+  height: 600px;
+  height: 90%;
+  overflow: hidden;
+}

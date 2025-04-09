@@ -1,0 +1,27 @@
+/* С учетом sidebar */
+.app-container {
+  display: flex;
+}
+
+.app-container.login-active {
+  display: block;
+}
+
+.main-content {
+  transition: margin-left 0.3s ease;
+  width: 100%;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.main-content.with-sidebar {
+  margin-left: 250px; /* Ширина открытого Sidebar */
+}
+
+.main-content.without-sidebar {
+  margin-left: 60px; /* Ширина свернутого Sidebar */
+}
+
+.read-the-docs {
+  color: #888;
+}

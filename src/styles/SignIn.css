@@ -1,0 +1,102 @@
+.login-container {
+  /* width: 80%;  */
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f9f9f9;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* text-align: center; */
+}
+
+/* Заголовок */
+.login-title {
+  font-size: 26px;
+  margin-bottom: 5px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* Подзаголовок */
+.login-subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Форма */
+.login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Группы ввода */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+/* Обёртка для иконок и полей ввода */
+.input-wrapper {
+  position: relative;
+}
+
+.input-wrapper .icon {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 18px;
+  color: #333;
+  /* background-color: #999; */
+}
+
+.input-wrapper input {
+  width: 100%;
+  padding: 10px 10px 10px 40px; /* Отступ для иконки */
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.input-wrapper input:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+/* Кнопка входа */
+.login-button {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #17a2b8;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover {
+  background-color: #138496;
+}
+@media (min-width: 992px) {
+  .login-container {
+    width: 960px;
+  }
+}
+@media (min-width: 768px) {
+  .login-container {
+    width: 570px;
+  }
+}

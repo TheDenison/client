@@ -1,0 +1,84 @@
+/* Закрепляет header при прокрутке страницы */
+/* .header {
+  position: sticky;
+  top: 0px; 
+  background-color: #F2F1FF;
+} */
+
+.header_nav {
+  display: flex; /* Все элементы располагаются в строку */
+  align-items: center; /* Выравнивание по центру по вертикали */
+  justify-content: space-between; /* Пространство между логотипом и ссылками */
+  padding: 0 20px; /* Отступы внутри */
+  position: relative;
+
+  /* box-shadow: 0px 5px 5px 1px rgba(0, 0, 0, 0.2); */
+}
+
+.header_nav ul {
+  position: absolute; /* Отделяем список от общего потока */
+  left: 50%; /* Сдвигаем центр списка в середину страницы */
+  transform: translateX(-50%); /* центрирования */
+  display: flex; /* Располагаем элементы списка в одну строку */
+  list-style: none; /* Убираем маркеры списка */
+  margin: 0;
+  padding: 0;
+}
+
+.header_nav ul li {
+  margin: 20px; /* Расстояние между элементами */
+  color: #0d0a2c; /*цвет текста*/
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.header_nav ul li:hover {
+  color: #4a90e2;
+}
+
+.header_logo {
+  flex: 0; /* Логотип остаётся на месте */
+}
+
+.header_icon {
+  height: 40px;
+  width: auto;
+}
+
+/* LogOut */
+.logout-button {
+  position: absolute;
+  /* top: 10px; */
+  padding: 10px 10px 10px 10px;
+  right: 20px;
+  font-size: 18px;
+  /* margin: 20px;  */
+  color: #fff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.logout-button:hover {
+  /* background-color: #d32f2f; */
+  /* color: #4a90e2; */
+  transform: scale(1.01); /*Легкое увеличение*/
+  box-shadow: 0 4px 8px rgba(53, 59, 81, 0.719);
+}
+
+.icon.logout-icon {
+  font-size: 12px;
+}
+
+.upload-page {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 936px) {
+  .header_nav ul {
+    visibility: hidden;
+  }
+}

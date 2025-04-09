@@ -1,0 +1,15 @@
+{
+    "rules": {
+        "unit-allowed-list": ["px", "fr", "em", "rem", "vh", "%", "s", "deg"],
+        "block-no-empty": true,
+        "color-no-invalid-hex": true,
+        "rule-empty-line-before": [
+            "always",
+            {
+                "except": ["first-nested"],
+                "ignore": ["after-comment"]
+            }
+        ]
+    },
+    "ignoreFiles": ["**/node_modules/**", "**/dist/**"]
+}

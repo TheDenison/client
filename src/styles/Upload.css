@@ -1,0 +1,124 @@
+.doc-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  color: #0d0a2c;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-title {
+  font-size: 20px;
+  margin-bottom: 10px;
+  border-bottom: 2px solid #0d0a2c;
+  padding-bottom: 5px;
+}
+
+.templates-section,
+.upload-section {
+  margin-bottom: 30px;
+}
+
+.template-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.template-name {
+  font-size: 16px;
+}
+
+.download-button {
+  text-decoration: none;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #fff;
+  background-color: #464565;
+  transition: background-color 0.3s ease;
+}
+
+.download-button:hover {
+  background-color: #4a90e2;
+}
+
+.upload-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  position: relative; /* Для управления абсолютным позиционированием дочерних элементов */
+  margin-bottom: 15px;
+}
+
+.upload-label {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.upload-input {
+  border: 1px solid #ccc;
+  padding: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  padding-right: 30px; /* Добавим место, чтобы иконка не перекрывала кнопку */
+}
+
+.upload-input-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.upload-status-icon {
+  position: absolute;
+  right: 300px; /* Расстояние от края кнопки */
+}
+
+.spinner{
+  width: 20px;
+  height: 20px;
+  border: 3px solid #ccc;
+  border-top: 3px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  pointer-events: none; /* Иконка не должна мешать клику на кнопку */
+}
+
+.success-icon {
+  color: #28a745;
+  font-size: 16px;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.upload-button {
+  padding: 5px 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-button:hover {
+  background-color: #45a049;
+}
